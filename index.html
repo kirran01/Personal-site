@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kirran Kirpalani</title>
+  </head>
+  <body>
+    <!-- NAV START -->
+    <nav>
+      <ul>
+        <a id="myBtn">Contact -</a>
+        <a href="https://www.linkedin.com/in/kirran-kirpalani/"> LinkedIn -</a>
+        <a href="https://github.com/kirran01">Github</a>
+      </ul>
+    </nav>
+    <!-- NAV END -->
+    <!-- MODAL START -->
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close"></span>
+        <h4>
+          Email: <input type="text" value="Kirran-@live.com" id="myEmail" />
+          <button id="copyEmail" onclick="copyEmail()">copy</button>
+        </h4>
+        <h4>
+          Phone: <input type="text" value="3059514521" id="myPhone" />
+          <button id="copyPhone" onclick="copyPhone()">copy</button>
+        </h4>
+      </div>
+    </div>
+    <!-- MODAL END -->
+    <!-- HEAD -->
+    <header>
+      <h1>Kirran Kirpalani - Full Stack Developer</h1>
+      <h5>
+        Javascript (ES6), MongoDB, MYSQL, Express, React, NodeJS, HTML & CSS
+      </h5>
+    </header>
+    <!-- HEAD END -->
+    <!-- PROJECT SECTION START -->
+    <div class="projects">
+      <h2>Projects</h2>
+      <div class="project-card">
+        <div class="project-card-links">
+          <a href="https://kirran01.github.io/Brickbreaker/"
+            >JS Brickbreaker (Desktop)</a
+          >
+          <a href="https://github.com/kirran01/Brickbreaker">GitHub Repo</a>
+        </div>
+        <img src="p1.png" alt="img" />
+      </div>
+    </div>
+    <!-- PROJECT SECTION END -->
+    <div class="info">
+      <h2>Education</h2>
+      <h3>Degrees</h3>
+      <!-- <ul>
+        <li>
+          Bachelors: University of Denver: Psychology & Emerging Digital
+          Practices
+        </li>
+        <li>Masters: Birkbeck University of London: Psychology</li>
+      </ul> -->
+      <p>
+        Bachelors: University of Denver: Psychology & Emerging Digital Practices
+      </p>
+      <p>Masters: Birkbeck University of London: Psychology</p>
+
+      <h3>Certificates</h3>
+      <!-- <ul>
+        <li>General Assembly Software Engineering Immersive</li>
+        <li>Ironhack Web Development Immersive</li>
+      </ul> -->
+      <p>General Assembly Software Engineering Immersive</p>
+      <p>Ironhack Web Development Immersive</p>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

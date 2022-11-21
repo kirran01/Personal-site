@@ -1,0 +1,110 @@
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+nav ul{
+padding: 0;
+}
+input{
+    border: 0;
+}
+
+header{
+    text-align: center;
+    margin: 75px 0 0 0;
+}
+header h5{
+    font-weight: lighter;
+    margin:0 5px 0 5px;
+}
+
+.projects{
+text-align: center;
+}
+.project-card{
+    background-color: antiquewhite;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px;
+}
+.project-card a{
+    color: royalblue;
+    margin:10px;
+    text-decoration: none;
+    font-size: 14px;
+}
+.project-card img{
+    /* height:16em; */
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.project-card-links{
+    margin: 10px 0px 0px 0px;
+}
+
+.info{
+    text-align: center;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+  
+  .modal button{
+background-color: black;
+border: none;
+border-radius:2px;
+color: white;
+padding: 5px 10px 5px 10px;
+  }
+
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  /* The Close Button */
+  .close {
+    float: right;
+    font-size: 28px;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
