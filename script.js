@@ -22,30 +22,35 @@ window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
-  console.log("out");
-  //   document.getElementById("copyEmail").innerText = "copy";
-  //   document.getElementById("copyEmail").style = "background-color:black";
+  console.log("out?");
 };
 
 function copyEmail() {
   // Get the text field
+  //alert("copied!");
   var copyText = document.getElementById("myEmail");
-  document.getElementById("copyEmail").innerText = "copied!";
-  document.getElementById("copyEmail").style = "background-color:green";
-
+  let buttonEmailElement = document.getElementById("buttonEmail");
+  buttonEmailElement.innerText = "copied!";
+  buttonEmailElement.style = "background-color:green";
   // Select the text field
   copyText.select();
   copyText.setSelectionRange(0, 99999); // For mobile devices
 
   // Copy the text inside the text field
   navigator.clipboard.writeText(copyText.value);
+
+  setTimeout(() => {
+    buttonEmailElement.innerText = "copy";
+    buttonEmailElement.style = "background-color:black";
+  }, 2000);
 }
 
 function copyPhone() {
   // Get the text field
   var copyText = document.getElementById("myPhone");
-  document.getElementById("copyPhone").innerText = "copied!";
-  document.getElementById("copyPhone").style = "background-color:green";
+  let buttonPhoneElement = document.getElementById("buttonPhone");
+  buttonPhoneElement.innerText = "copied!";
+  buttonPhoneElement.style = "background-color:green";
 
   // Select the text field
   copyText.select();
@@ -53,4 +58,9 @@ function copyPhone() {
 
   // Copy the text inside the text field
   navigator.clipboard.writeText(copyText.value);
+
+  setTimeout(() => {
+    buttonPhoneElement.innerText = "copy";
+    buttonPhoneElement.style = "background-color:black";
+  }, 2000);
 }
