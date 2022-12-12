@@ -1,6 +1,6 @@
 body{
     margin:0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 nav{
@@ -10,6 +10,7 @@ nav{
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1;
 }
 nav a{
     text-decoration: none;
@@ -18,13 +19,42 @@ nav a{
 nav ul{
 padding: 0;
 }
+
+nav ul li{
+    margin: 0px 10px 0px;
+}
+
+nav ul li:hover{
+    cursor: pointer;
+}
+nav ul li img{
+    margin: 0px 5px 0px;
+}
+
+header ul{
+    display: flex;
+    justify-content: center;
+    margin:30px 110px 30px;
+    flex-wrap: wrap;
+}
+
+header ul li{
+    margin: 15px;
+}
+
+header h1{
+    margin: 40px 20px 40px;
+    font-size: 60px;
+}
+
+
 input{
     border: 0;
 }
 
 header{
     text-align: center;
-    margin: 75px 0 0 0;
+    margin: 110px 0 0 0;
 }
 header h5{
     font-weight: lighter;
@@ -33,14 +63,23 @@ header h5{
 
 .projects{
 text-align: center;
+justify-content: center;
+display: flex;
+flex-wrap: wrap;
+animation: fade-in 3s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .project-card{
-    background-color: antiquewhite;
+    background-color:white;;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin: 10px;
+}
+
+.project-card:hover{
+    animation: pulsate 1s infinite alternate;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 .project-card a{
     color: royalblue;
@@ -49,16 +88,24 @@ text-align: center;
     font-size: 14px;
 }
 .project-card img{
-    /* height:16em; */
+    height:200px;
     margin: 10px;
     border-radius: 5px;
 }
 
 .project-card-links{
+
     margin: 10px 0px 0px 0px;
 }
 
-.info{
+.project-card-links a:hover{
+    text-decoration: underline;
+}
+
+.info-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
@@ -76,11 +123,54 @@ text-align: center;
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   }
 
+
+.info-card{
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.info-card h3{
+    margin-top: 0;
+}
+
+.info-card ul{
+    padding: 0;
+}
+
+.info-card ul li{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.info-card ul li img{
+    margin: 10px;
+}
+
+.nav-main ul{
+    display: flex;
+}
+
+.nav-main ul li{
+    display: flex;
+    align-items: center;
+}
+
+header ul li{
+    display: flex;
+    align-items: center;
+}
+
+#sect-2-title{
+    text-align: center;
+}
+
   
   .modal button{
 background-color: black;
 border: none;
-border-radius:2px;
+border-radius:5px;
 color: white;
 padding: 5px 10px 5px 10px;
   }
@@ -91,9 +181,16 @@ padding: 5px 10px 5px 10px;
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
-    border-radius: 5px;
+    width: 30%;
+    border-radius: 10px;
     text-align: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
+  }
+
+  .modal-content button:hover{
+    cursor: pointer;
+    background-color:gray;
   }
   
   /* The Close Button */
@@ -108,3 +205,23 @@ padding: 5px 10px 5px 10px;
     text-decoration: none;
     cursor: pointer;
   }
+
+
+  @keyframes pulsate{
+0%{
+    scale: 1;
+}
+100%{
+    scale: 1.04;
+}
+  }
+
+
+@keyframes fade-in{
+    0%{
+opacity: 0;
+    }
+    100%{
+opacity: 1;
+    }
+}

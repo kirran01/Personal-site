@@ -1,7 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-device-width: 320px)"
+      href="style.mobile.css"
+    />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,11 +18,29 @@
   </head>
   <body>
     <!-- NAV START -->
-    <nav>
+    <nav class="nav-main">
       <ul>
-        <a id="myBtn">Contact -</a>
-        <a href="https://www.linkedin.com/in/kirran-kirpalani/"> LinkedIn -</a>
-        <a href="https://github.com/kirran01">Github</a>
+        <li>
+          <img style="height: 20px" src="icons/phoe.png" alt="1" />
+          <a id="myBtn">Contact</a>
+        </li>
+        <li>
+          <img style="height: 20px" src="icons/linked.png" alt="1" />
+          <a
+            href="https://www.linkedin.com/in/kirran-kirpalani/"
+            target="_blank"
+          >
+            LinkedIn</a
+          >
+        </li>
+        <li>
+          <img style="height: 20px" src="icons/github.png" alt="1" />
+          <a href="https://github.com/kirran01" target="_blank">Github</a>
+        </li>
+        <li>
+          <img style="height: 20px" src="icons/CV.png" alt="1" />
+          <a href="https://github.com/kirran01" target="_blank">Resume</a>
+        </li>
       </ul>
     </nav>
     <!-- NAV END -->
@@ -22,11 +49,13 @@
       <div class="modal-content">
         <span class="close"></span>
         <h4>
-          Email: <input type="text" value="Kirran-@live.com" id="myEmail" />
+          <label>Email: </label>
+          <input type="text" value="Kirran-@live.com" id="myEmail" readonly />
           <button id="buttonEmail" onclick="copyEmail()">copy</button>
         </h4>
         <h4>
-          Phone: <input type="text" value="3059514521" id="myPhone" />
+          <label>Phone: </label>
+          <input type="text" value="3059514521" id="myPhone" readonly />
           <button id="buttonPhone" onclick="copyPhone()">copy</button>
         </h4>
       </div>
@@ -35,47 +64,118 @@
     <!-- HEAD -->
     <header>
       <h1>Kirran Kirpalani - Full Stack Developer</h1>
-      <h5>
-        Javascript (ES6), MongoDB, MYSQL, Express, React, NodeJS, HTML & CSS
-      </h5>
+      <ul>
+        <li>
+          <img style="height: 40px" src="./icons/JS.png" alt="1" />
+          <p>Javascript (ES6)</p>
+        </li>
+        <li>
+          <img style="height: 40px" src="./icons/mongo.png" alt="1" />
+          <p>MongoDB</p>
+        </li>
+        <li>
+          <img style="height: 40px" src="./icons/sql.png" alt="1" />
+          <p>SQL</p>
+        </li>
+        <li>
+          <img style="height: 40px" src="./icons/Nodejs.png" alt="1" />
+          <p>NodeJS</p>
+        </li>
+        <li>
+          <img style="height: 40px" src="./icons/react.png" alt="1" />
+          <p>React</p>
+        </li>
+        <li>
+          <img style="height: 40px" src="./icons/html5.png" alt="1" />
+          <p>HTML5</p>
+        </li>
+        <li>
+          <img style="height: 40px" src="./icons/CSS.png" alt="1" />
+          <p>CSS3</p>
+        </li>
+      </ul>
     </header>
     <!-- HEAD END -->
     <!-- PROJECT SECTION START -->
+    <h2 style="text-align: center; margin: 20px 10px 40px; font-size: 30px;">Projects</h2>
     <div class="projects">
-      <h2>Projects</h2>
       <div class="project-card">
         <div class="project-card-links">
-          <a href="https://kirran01.github.io/Brickbreaker/"
+          <a href="https://kirran01.github.io/Brickbreaker/" target="_blank"
             >JS Brickbreaker (Desktop)</a
           >
-          <a href="https://github.com/kirran01/Brickbreaker">GitHub Repo</a>
+          <a href="https://github.com/kirran01/Brickbreaker" target="_blank"
+            >GitHub Repo</a
+          >
         </div>
-        <img src="p1.png" alt="img" />
+
+        <a href="https://kirran01.github.io/Brickbreaker/" target="_blank">
+          <img src="p1.png" alt="img"
+        /></a>
+      </div>
+      <div class="project-card">
+        <div class="project-card-links">
+          <a href="https://ghibliarchive.fly.dev/" target="_blank"
+            >Studio Ghibli Archive - API</a
+          >
+          <a href="https://github.com/kirran01/Project-2" target="_blank"
+            >GitHub Repo</a
+          >
+        </div>
+        <a href="https://ghibliarchive.fly.dev/" target="_blank">
+          <img src="p2.png" alt="img"
+        /></a>
+      </div>
+      <div class="project-card">
+        <div class="project-card-links">
+          <a href="https://ghibliarchive.fly.dev/" target="_blank"
+            >Studio Ghibli Archive - API</a
+          >
+          <a href="https://github.com/kirran01/Project-2" target="_blank"
+            >GitHub Repo</a
+          >
+        </div>
+        <img src="p2.png" alt="img" />
       </div>
     </div>
     <!-- PROJECT SECTION END -->
-    <div class="info">
-      <h2>Education</h2>
-      <h3>Degrees</h3>
-      <!-- <ul>
-        <li>
-          Bachelors: University of Denver: Psychology & Emerging Digital
-          Practices
-        </li>
-        <li>Masters: Birkbeck University of London: Psychology</li>
-      </ul> -->
-      <p>
-        Bachelors: University of Denver: Psychology & Emerging Digital Practices
-      </p>
-      <p>Masters: Birkbeck University of London: Psychology</p>
+    <h2 id="sect-2-title" style="margin: 40px 10px 40px; font-size: 30px;">Education</h2>
 
+    <div class="info-card">
+      <h3>Degrees</h3>
+      <hr />
+      <ul>
+        <li>
+          <img src="icons/DU.png" alt="1" style="height: 40px" />
+          <p>
+            Bachelors: University of Denver: Psychology & Emerging Digital
+            Practices
+          </p>
+        </li>
+        <li>
+          <img
+            src="icons/bik.jpg"
+            style="height: 40px; border-radius: 5px"
+            alt="1"
+          />
+          <p>Masters: Birkbeck University of London: Psychology</p>
+        </li>
+      </ul>
+    </div>
+    <div class="info-card">
       <h3>Certificates</h3>
-      <!-- <ul>
-        <li>General Assembly Software Engineering Immersive</li>
-        <li>Ironhack Web Development Immersive</li>
-      </ul> -->
-      <p>General Assembly Software Engineering Immersive</p>
-      <p>Ironhack Web Development Immersive</p>
+      <hr />
+
+      <ul>
+        <li>
+          <img src="icons/gA2.png" s style="height: 50px" alt="1" />
+          <p>General Assembly Software Engineering Immersive</p>
+        </li>
+        <li>
+          <img src="icons/ih.png" style="height: 50px" alt="1" />
+          <p>Ironhack Web Development Immersive</p>
+        </li>
+      </ul>
     </div>
     <script src="./script.js"></script>
   </body>
