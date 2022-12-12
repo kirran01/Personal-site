@@ -1,6 +1,7 @@
 body{
     margin:0;
     font-family: 'Open Sans', sans-serif;
+    animation: fade-in 1s linear;
 }
 
 nav{
@@ -30,6 +31,7 @@ nav ul li:hover{
 nav ul li img{
     margin: 0px 5px 0px;
 }
+
 
 header ul{
     display: flex;
