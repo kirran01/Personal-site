@@ -158,6 +158,10 @@ animation: fade-in 3s cubic-bezier(0.075, 0.82, 0.165, 1);
     display: flex;
     align-items: center;
 }
+.nav-main ul li img{
+    height: 20px;
+}
+
 
 header ul li{
     display: flex;
@@ -226,4 +230,63 @@ opacity: 0;
     100%{
 opacity: 1;
     }
+}
+
+@media(max-width:320px){
+
+
+.language-list{
+padding: 0;
+}
+
+.nav-main ul li a{
+    display: none;
+}
+
+.nav-main ul li img{
+    height: 30px;
+}
+
+    header h1{
+    font-size: 29px;
+    }
+    .projects{
+        display: block;
+    }
+    
+    .modal-content{
+        padding:40px;
+    }
+    
+    
+    .modal-content h4{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    
+    .modal-content h4 label{
+        margin: 5px;
+    }
+    
+    .modal-content h4 input{
+        margin: 5px;
+    }
+    
+    .modal-content h4 button{
+        padding:6px 5px 6px;
+    }
+
+    .info-card{
+        display: flex;
+        align-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .info-card ul li{
+        justify-content: center;
+    }
+
 }

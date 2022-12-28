@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!-- change h2 font size to about 30, change language icons into seperate boxes, remove h tags from nav, handle
+  responsiveness on project cards. -->
   <head>
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
@@ -21,11 +23,11 @@
     <nav class="nav-main">
       <ul>
         <li>
-          <img style="height: 20px" src="icons/phoe.png" alt="1" />
+          <img src="icons/phoe.png" alt="1" />
           <a id="myBtn">Contact</a>
         </li>
         <li>
-          <img style="height: 20px" src="icons/linked.png" alt="1" />
+          <img src="icons/linked.png" alt="1" />
           <a
             href="https://www.linkedin.com/in/kirran-kirpalani/"
             target="_blank"
@@ -34,12 +36,16 @@
           >
         </li>
         <li>
-          <img style="height: 20px" src="icons/github.png" alt="1" />
+          <img src="icons/github.png" alt="1" />
           <a href="https://github.com/kirran01" target="_blank">Github</a>
         </li>
         <li>
-          <img style="height: 20px" src="icons/CV.png" alt="1" />
-          <a href="https://drive.google.com/file/d/1Q9piNeH_KdwWdGYEK5YkfVqXQVMdu6c3/view?usp=share_link" target="_blank">Resume</a>
+          <img src="icons/CV.png" alt="1" />
+          <a
+            href="https://drive.google.com/file/d/1cfbmCxL4uEmCLGvDSO4de-I3Sv7qrMOu/view"
+            target="_blank"
+            >Resume</a
+          >
         </li>
       </ul>
     </nav>
@@ -61,10 +67,10 @@
       </div>
     </div>
     <!-- MODAL END -->
-    <!-- HEAD -->
+    <!-- HEADER -->
     <header>
       <h1>Kirran Kirpalani - Full Stack Developer</h1>
-      <ul>
+      <ul class="language-list">
         <li>
           <img style="height: 40px" src="./icons/JS.png" alt="1" />
           <p>Javascript (ES6)</p>
@@ -95,9 +101,11 @@
         </li>
       </ul>
     </header>
-    <!-- HEAD END -->
+    <!-- HEADER END -->
     <!-- PROJECT SECTION START -->
-    <h2 style="text-align: center; margin: 20px 10px 40px; font-size: 30px;">Projects</h2>
+    <h2 style="text-align: center; margin: 20px 10px 40px; font-size: 30px">
+      Projects
+    </h2>
     <div class="projects">
       <div class="project-card">
         <div class="project-card-links">
@@ -110,6 +118,7 @@
         </div>
 
         <a href="https://kirran01.github.io/Brickbreaker/" target="_blank">
+          <div class="project-img">img</div>
           <img src="p1.png" alt="img"
         /></a>
       </div>
@@ -128,16 +137,15 @@
       </div>
       <div class="project-card">
         <div class="project-card-links">
-          <a target="_blank"
-            >coming soon</a
-          >
-       
+          <a target="_blank">coming soon</a>
         </div>
-        <img src="p2.png" alt="img" style="opacity: 0;" />
+        <img src="p2.png" alt="img" style="opacity: 0" />
       </div>
     </div>
     <!-- PROJECT SECTION END -->
-    <h2 id="sect-2-title" style="margin: 40px 10px 40px; font-size: 30px;">Education</h2>
+    <h2 id="sect-2-title" style="margin: 40px 10px 40px; font-size: 30px">
+      Education
+    </h2>
 
     <div class="info-card">
       <h3>Degrees</h3>
